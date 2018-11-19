@@ -23,6 +23,14 @@ Etc.
 Allow users to search for items using a search bar (~5 hours)
 Owner: [Shubham]
 
+Users can post an item and item information (~10 hours, assuming backend is ready)
+Owner: [Ethan]
+(Note: requires backend to be set up for full functionality, so work on this later
+UI can still be set up in the meantime)
+
+Allow users to sort results using built-in categories (~10 hours)
+Owner: [Ethan]
+
 
 
 
