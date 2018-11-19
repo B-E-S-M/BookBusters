@@ -2,6 +2,10 @@
 
 ## Group Information
 
+### Group Name
+
+- B-E-S-M
+
 ### Members
 
 - Brian Casipit
