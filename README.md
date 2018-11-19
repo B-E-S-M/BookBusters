@@ -32,6 +32,11 @@ Allow users to sort results using built-in categories (~10 hours)
 Owner: [Ethan]
 
 
+Each item has its own details page (~5 hours)
+Owner: [Monali]
+
+UI (~5-10 hours)
+Owner: [Monali]
 
 
 ## Wireframes
