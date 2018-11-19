@@ -6,6 +6,7 @@
 
 - Brian Casipit
 - Ethan Chen
+- Monali Chuatico
 
 ## Features
 
