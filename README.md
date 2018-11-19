@@ -5,6 +5,7 @@
 ### Members
 
 - Brian Casipit
+- Ethan Chen
 
 ## Features
 
