@@ -10,34 +10,46 @@
 - Shubham Gupta
 
 ## Features
-Users can browse through items in a table/collection/other view (~10 hours)
-Owner: [Shubham]
-Test with dummy json first
 
-Allow users to filter results with specific categories (~10 hours)
-Owner: [Shubham]
-Location
-Characteristics
-Etc.
+### Required
 
-Allow users to search for items using a search bar (~5 hours)
-Owner: [Shubham]
+- [ ] Users can switch between different screens using navigation
+- [ ] Users can browse through items in a table/collection/other view
+- [ ] Each item has its own details page
+- [ ] Users can post an item and item information
+- [ ] Allow users to search for items using a search bar
+- [ ] Allow users to filter results with specific categories
+- [ ] Allow users to sort results using built-in categories
 
-Users can post an item and item information (~10 hours, assuming backend is ready)
-Owner: [Ethan]
-(Note: requires backend to be set up for full functionality, so work on this later
-UI can still be set up in the meantime)
+### Optional
 
-Allow users to sort results using built-in categories (~10 hours)
-Owner: [Ethan]
+- [ ] Users can view items that they/another user are/is selling
+- [ ] Users can register for an account
+- [ ] Users can recover/reset their password
+- [ ] Users can compare seller price to original
+- [ ] Implement payment options through the app
+- [ ] Commission or money by running ads
+- [ ] Shipment options
 
+## Task Delegation
 
-Each item has its own details page (~5 hours)
-Owner: [Monali]
+### Required Tasks
 
-UI (~5-10 hours)
-Owner: [Monali]
+* __Brian Casipit__
+  * Set up backend/db to store and fetch user and sale item information __(~15 hours)__
+  * Allow users to search for items using a search bar __(~5 hours)__
 
+* __Ethan Chen__
+  * Users can post an item and item information __(~10 hours)__
+  * Allow users to sort results using built-in categories __(~10 hours)__
+
+* __Monali Chuatico__
+  * Users can switch between different screens using navigation + user interface __(~15 hours)__
+  * Each item has its own details page __(~5 hours)__
+
+* __Shubham Gupta__
+  * Users can browse through items in a table/collection/other view __(~10 hours)__
+  * Allow users to filter results with specific categories __(~10 hours)__
 
 ## Wireframes
 
