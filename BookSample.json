@@ -1,6 +1,6 @@
 [
   {
-    id: 1,
+    post_id: 1,
     name: "American Literature 1st Edition",
     subject: "English",
     condition: "Used - Good",
@@ -13,7 +13,7 @@
     seller_email: "fratrder@yourmail.com"
   },
   {
-    id: 2,
+    post_id: 2,
     name: "Introduction to Computer Science 2nd Edition",
     subject: "Computer Science",
     condition: "Used - Moderate",
@@ -26,7 +26,7 @@
     seller_email: "jembut@yourmail.com"
   },
   {
-    id: 3,
+    post_id: 3,
     name: "Imagining Fiction",
     subject: "English",
     condition: "Used - Almost New",
@@ -39,7 +39,7 @@
     seller_email: "kithjiut@yourmail.com"
   },
   {
-    id: 4,
+    post_id: 4,
     name: "Calculus II 4th Edition",
     subject: "Math",
     condition: "Used - Worn",
@@ -52,7 +52,7 @@
     seller_email: null
   },
   {
-    id: 5,
+    post_id: 5,
     name: "America in the 18th Century 2nd Edition",
     subject: "History",
     condition: "Used - Good",
@@ -65,7 +65,7 @@
     seller_email: "mboled@yourmail.com"
   },
   {
-    id: 6,
+    post_id: 6,
     name: "First Semester Japanese",
     subject: "Japanese",
     condition: "New",
@@ -78,7 +78,7 @@
     seller_email: "giorgioga@yourmail.com"
   },
   {
-    id: 7,
+    post_id: 7,
     name: "Trigonometry I 3rd Edition",
     subject: "Math",
     condition: "Used - Good",
@@ -91,7 +91,7 @@
     seller_email: "johnnyappleseed@yourmail.com"
   },
   {
-    id: 8,
+    post_id: 8,
     name: "Let's Speak Spanish",
     subject: "Spanish",
     condition: "Used - Moderate",
@@ -104,7 +104,7 @@
     seller_email: "merantikk@yourmail.com"
   },
   {
-    id: 9,
+    post_id: 9,
     name: "Social Interaction",
     subject: "Sociology",
     condition: "Used - Worn",
@@ -117,7 +117,7 @@
     seller_email: "espamted@yourmail.com"
   },
   {
-    id: 10,
+    post_id: 10,
     name: "Convince Me With Words",
     subject: "English",
     condition: "Used - Good",
@@ -130,7 +130,7 @@
     seller_email: null
   },
   {
-    id: 11,
+    post_id: 11,
     name: "Physics Fundamentals I 4th Edition",
     subject: "Physics",
     condition: "Used - Moderate",
@@ -143,7 +143,7 @@
     seller_email: "evebt@yourmail.com"
   },
   {
-    id: 12,
+    post_id: 12,
     name: "Chemistry Principles II 3rd Edition",
     subject: "Chemistry",
     condition: "Used - Good",
@@ -156,7 +156,7 @@
     seller_email: "fnnusbzo@yourmail.com"
   },
   {
-    id: 13,
+    post_id: 13,
     name: "American Literature 1st Edition",
     subject: "English",
     condition: "Used - Good",
@@ -169,7 +169,7 @@
     seller_email: null
   },
   {
-    id: 14,
+    post_id: 14,
     name: "Trigonometry I 3rd Edition",
     subject: "Math",
     condition: "Used - Good",
@@ -182,7 +182,7 @@
     seller_email: "sixsans@yourmail.com"
   },
   {
-    id: 15,
+    post_id: 15,
     name: "Introduction to Computer Science 2nd Edition",
     subject: "Computer Science",
     condition: "Used - Moderate",
@@ -195,7 +195,7 @@
     seller_email: "justdoit@yourmail.com"
   },
   {
-    id: 16,
+    post_id: 16,
     name: "Second Semester Japanese",
     subject: "Japanese",
     condition: "Used - Good",
@@ -208,7 +208,7 @@
     seller_email: null
   },
   {
-    id: 17,
+    post_id: 17,
     name: "Convince Me With Words",
     subject: "English",
     condition: "Used - Good",
@@ -221,7 +221,7 @@
     seller_email: null
   },
   {
-    id: 18,
+    post_id: 18,
     name: "American Literature 1st Edition",
     subject: "English",
     condition: "Used - Good",
@@ -234,7 +234,7 @@
     seller_email: "yeahboii@yourmail.com"
   },
   {
-    id: 19,
+    post_id: 19,
     name: "America in the 18th Century 2nd Edition",
     subject: "History",
     condition: "Used - Good",
@@ -247,7 +247,7 @@
     seller_email: "cobznhobz@yourmail.com"
   },
   {
-    id: 20,
+    post_id: 20,
     name: "Trigonometry I 3rd Edition",
     subject: "Math",
     condition: "Used - Good",
