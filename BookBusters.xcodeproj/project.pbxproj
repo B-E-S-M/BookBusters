@@ -13,6 +13,8 @@
 		5D33EBED21A2974B00B596FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D33EBEB21A2974B00B596FC /* LaunchScreen.storyboard */; };
 		5D33EBF821A2974C00B596FC /* BookBustersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D33EBF721A2974C00B596FC /* BookBustersTests.swift */; };
 		5D33EC0321A2974C00B596FC /* BookBustersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D33EC0221A2974C00B596FC /* BookBustersUITests.swift */; };
+		5D33EC1721A3796300B596FC /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D33EC1621A3796300B596FC /* Book.swift */; };
+		5D33EC1921A37F7200B596FC /* TestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D33EC1821A37F7200B596FC /* TestAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		5D33EBFE21A2974C00B596FC /* BookBustersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookBustersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D33EC0221A2974C00B596FC /* BookBustersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookBustersUITests.swift; sourceTree = "<group>"; };
 		5D33EC0421A2974C00B596FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D33EC1621A3796300B596FC /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		5D33EC1821A37F7200B596FC /* TestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,7 @@
 		5D33EC1221A2976700B596FC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5D33EC1621A3796300B596FC /* Book.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 		5D33EC1321A2976B00B596FC /* APIs */ = {
 			isa = PBXGroup;
 			children = (
+				5D33EC1821A37F7200B596FC /* TestAPI.swift */,
 			);
 			path = APIs;
 			sourceTree = "<group>";
@@ -285,6 +291,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D33EC1921A37F7200B596FC /* TestAPI.swift in Sources */,
+				5D33EC1721A3796300B596FC /* Book.swift in Sources */,
 				5D33EBE321A2974A00B596FC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
