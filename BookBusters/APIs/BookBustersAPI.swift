@@ -16,7 +16,7 @@ class BookBustersAPI {
         session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
     }
     
-    func fetchTestBooks(completion: @escaping ([Book]?, Error?) -> ()) {
+    func fetchBooks(completion: @escaping ([Book]?, Error?) -> ()) {
         let urlString = "https://dry-castle-38032.herokuapp.com/books"
         let url = URL(string: urlString)
         
@@ -40,7 +40,7 @@ class BookBustersAPI {
         task.resume()
     }
     
-    func postTestBook(bookDictionary: [String: Any], completion: @escaping (Book?, Error?) -> ()) {
+    func postBook(bookDictionary: [String: Any], completion: @escaping (Book?, Error?) -> ()) {
         let urlString = "https://dry-castle-38032.herokuapp.com/book_create_using_json"
         let url = URL(string: urlString)
         var request = URLRequest(url: url!, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
