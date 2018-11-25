@@ -53,4 +53,21 @@ class Book {
         return books
     }
     
+    func printProperties() {
+        print("Name: \(name ?? "Name not available")")
+        print("Subject: \(subject ?? "Subject not available")")
+        print("Condition: \(condition ?? "Condition not available")")
+        
+        print("Quantity: \(quantity ?? 1)")
+        print("Price: \(price ?? "Price not available")")
+        
+        print("Description: \(description ?? "No description")")
+        print("Location: \(location ?? "Location not specified")")
+        
+        print("Image Link: \(image_link ?? "")")
+        
+        print("Seller Phone: \(seller_phone ?? "Phone number not specified")")
+        print("Seller Email: \(seller_email ?? "Email not specified")")
+    }
+    
 }
