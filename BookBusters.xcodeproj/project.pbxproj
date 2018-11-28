@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5D33EBE321A2974A00B596FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D33EBE221A2974A00B596FC /* AppDelegate.swift */; };
-		5D33EBE821A2974A00B596FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D33EBE621A2974A00B596FC /* Main.storyboard */; };
 		5D33EBEA21A2974B00B596FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D33EBE921A2974B00B596FC /* Assets.xcassets */; };
 		5D33EBED21A2974B00B596FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D33EBEB21A2974B00B596FC /* LaunchScreen.storyboard */; };
 		5D33EBF821A2974C00B596FC /* BookBustersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D33EBF721A2974C00B596FC /* BookBustersTests.swift */; };
@@ -16,6 +15,13 @@
 		5D33EC1721A3796300B596FC /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D33EC1621A3796300B596FC /* Book.swift */; };
 		5D33EC1921A37F7200B596FC /* TestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D33EC1821A37F7200B596FC /* TestAPI.swift */; };
 		5D33EC6121AAC72100B596FC /* BookBustersAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D33EC6021AAC72100B596FC /* BookBustersAPI.swift */; };
+		5D33EC6B21AE783A00B596FC /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D33EC6821AE783A00B596FC /* ThirdViewController.swift */; };
+		5D33EC6C21AE783A00B596FC /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D33EC6921AE783A00B596FC /* AddViewController.swift */; };
+		5D33EC6D21AE783A00B596FC /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D33EC6A21AE783A00B596FC /* BrowseViewController.swift */; };
+		5D33EC7021AE78FF00B596FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D33EC6E21AE78FF00B596FC /* Main.storyboard */; };
+		5D33EC7C21AF122100B596FC /* Browse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D33EC7A21AF122100B596FC /* Browse.storyboard */; };
+		5D33EC7F21AF124100B596FC /* Add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D33EC7D21AF124100B596FC /* Add.storyboard */; };
+		5D33EC8221AF124B00B596FC /* Third.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D33EC8021AF124B00B596FC /* Third.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +44,6 @@
 /* Begin PBXFileReference section */
 		5D33EBDF21A2974A00B596FC /* BookBusters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookBusters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D33EBE221A2974A00B596FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5D33EBE721A2974A00B596FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D33EBE921A2974B00B596FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D33EBEC21A2974B00B596FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D33EBEE21A2974B00B596FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +56,13 @@
 		5D33EC1621A3796300B596FC /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		5D33EC1821A37F7200B596FC /* TestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAPI.swift; sourceTree = "<group>"; };
 		5D33EC6021AAC72100B596FC /* BookBustersAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookBustersAPI.swift; sourceTree = "<group>"; };
+		5D33EC6821AE783A00B596FC /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		5D33EC6921AE783A00B596FC /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		5D33EC6A21AE783A00B596FC /* BrowseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
+		5D33EC6F21AE78FF00B596FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5D33EC7B21AF122100B596FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Browse.storyboard; sourceTree = "<group>"; };
+		5D33EC7E21AF124100B596FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Add.storyboard; sourceTree = "<group>"; };
+		5D33EC8121AF124B00B596FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Third.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +117,12 @@
 				5D33EC1221A2976700B596FC /* Models */,
 				5D33EC1121A2976000B596FC /* View Controllers */,
 				5D33EC1021A2975800B596FC /* Views */,
-				5D33EBE221A2974A00B596FC /* AppDelegate.swift */,
-				5D33EBE621A2974A00B596FC /* Main.storyboard */,
 				5D33EBE921A2974B00B596FC /* Assets.xcassets */,
+				5D33EC6E21AE78FF00B596FC /* Main.storyboard */,
+				5D33EC7A21AF122100B596FC /* Browse.storyboard */,
+				5D33EC7D21AF124100B596FC /* Add.storyboard */,
+				5D33EC8021AF124B00B596FC /* Third.storyboard */,
+				5D33EBE221A2974A00B596FC /* AppDelegate.swift */,
 				5D33EBEB21A2974B00B596FC /* LaunchScreen.storyboard */,
 				5D33EBEE21A2974B00B596FC /* Info.plist */,
 			);
@@ -142,6 +157,9 @@
 		5D33EC1121A2976000B596FC /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5D33EC6921AE783A00B596FC /* AddViewController.swift */,
+				5D33EC6A21AE783A00B596FC /* BrowseViewController.swift */,
+				5D33EC6821AE783A00B596FC /* ThirdViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -267,9 +285,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D33EC7021AE78FF00B596FC /* Main.storyboard in Resources */,
 				5D33EBED21A2974B00B596FC /* LaunchScreen.storyboard in Resources */,
+				5D33EC7F21AF124100B596FC /* Add.storyboard in Resources */,
+				5D33EC7C21AF122100B596FC /* Browse.storyboard in Resources */,
+				5D33EC8221AF124B00B596FC /* Third.storyboard in Resources */,
 				5D33EBEA21A2974B00B596FC /* Assets.xcassets in Resources */,
-				5D33EBE821A2974A00B596FC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,8 +317,11 @@
 			files = (
 				5D33EC6121AAC72100B596FC /* BookBustersAPI.swift in Sources */,
 				5D33EC1921A37F7200B596FC /* TestAPI.swift in Sources */,
+				5D33EC6C21AE783A00B596FC /* AddViewController.swift in Sources */,
+				5D33EC6B21AE783A00B596FC /* ThirdViewController.swift in Sources */,
 				5D33EC1721A3796300B596FC /* Book.swift in Sources */,
 				5D33EBE321A2974A00B596FC /* AppDelegate.swift in Sources */,
+				5D33EC6D21AE783A00B596FC /* BrowseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,20 +357,44 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5D33EBE621A2974A00B596FC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5D33EBE721A2974A00B596FC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5D33EBEB21A2974B00B596FC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5D33EBEC21A2974B00B596FC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5D33EC6E21AE78FF00B596FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D33EC6F21AE78FF00B596FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5D33EC7A21AF122100B596FC /* Browse.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D33EC7B21AF122100B596FC /* Base */,
+			);
+			name = Browse.storyboard;
+			sourceTree = "<group>";
+		};
+		5D33EC7D21AF124100B596FC /* Add.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D33EC7E21AF124100B596FC /* Base */,
+			);
+			name = Add.storyboard;
+			sourceTree = "<group>";
+		};
+		5D33EC8021AF124B00B596FC /* Third.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D33EC8121AF124B00B596FC /* Base */,
+			);
+			name = Third.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
