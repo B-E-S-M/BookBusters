@@ -13,8 +13,7 @@ class BrowseViewController: UIViewController {
     var books: [Book] = []
     
     override func viewDidLoad() {
-        
-        
+        super.viewDidLoad()
     }
     
     // set up fetch method for use in view controller
@@ -41,6 +40,10 @@ class BrowseViewController: UIViewController {
             //  in attempting to print from an empty array.
             self.testPrint()
         } // end of closure
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        fetchBooks()
     }
     
     // set up post method for use in view controller
@@ -113,6 +116,10 @@ extension BrowseViewController : UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "booksCell", for: indexPath) as! BrowseCollectionViewCell
         
+        cell.priceLabel?.text = books[indexPath.row].price!
+        cell.conditionLabel?.text = books[indexPath.row].condition
+        cell.subjectLabel?.text = books[indexPath.row].subject
+        cell.locationLabel?.text = books[indexPath.row].location
         
        
        return cell
