@@ -55,6 +55,14 @@
   * Users can browse through items in a table/collection/other view __(~10 hours)__
   * Allow users to filter results with specific categories __(~10 hours)__
 
+## Video Walkthrough 
+
+Here's a walkthrough of implemented user stories:
+
+<img src='https://i.imgur.com/hZWUv6Y.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+GIFcreated with [LiceCap](http://www.cockos.com/licecap/).
+
 ## Wireframes
 
 
