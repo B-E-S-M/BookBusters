@@ -10,7 +10,7 @@ import Foundation
 
 class Book {
     
-    let post_id: Int?
+    let id: Int?
     let name: String?
     let subject: String?
     let condition: String?
@@ -27,7 +27,7 @@ class Book {
     let seller_email: String?
     
     init(dictionary: [String: Any]) {
-        post_id = dictionary["post_id"] as? Int ?? -1
+        id = dictionary["id"] as? Int ?? -1
         name = dictionary["name"] as? String ?? "Name not available"
         subject = dictionary["subject"] as? String ?? "Subject not available"
         condition = dictionary["condition"] as? String ?? "Condition not available"
