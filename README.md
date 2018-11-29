@@ -65,6 +65,7 @@ GIFcreated with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Wireframes
 
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/YMSsuPV"><a href="//imgur.com/YMSsuPV"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 
 Copyright [2018] [B-E-S-M]
