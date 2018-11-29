@@ -16,6 +16,7 @@ class BrowseCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var conditionLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
     
     var book: Book? {
         didSet {
