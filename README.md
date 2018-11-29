@@ -64,8 +64,6 @@ Here's a walkthrough of implemented user stories:
 GIFcreated with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Wireframes
-
-<img src="https://imgur.com/a/YMSsuPV" />
-
+<blockquote class="imgur-embed-pub" lang="en" data-id="qiAeawq"><a href="//imgur.com/qiAeawq">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 Copyright [2018] [B-E-S-M]
