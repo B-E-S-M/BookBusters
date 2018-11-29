@@ -6,9 +6,26 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Third View Controller-->
+        <scene sceneID="ota-zI-I2e">
+            <objects>
+                <viewController id="KHj-4F-fRF" customClass="ThirdViewController" customModule="BookBusters" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KIr-6N-4Ga">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="5E3-OB-bFk"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="Eqe-Zb-NjL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tHH-D4-77q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="146" y="634"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="PE2-Ck-slp">
             <objects>
@@ -21,7 +38,7 @@
                     <connections>
                         <segue destination="7QL-ZZ-o9P" kind="relationship" relationship="viewControllers" id="bTR-iY-y7s"/>
                         <segue destination="t9s-AQ-Uof" kind="relationship" relationship="viewControllers" id="J6S-SP-jpc"/>
-                        <segue destination="lWP-h8-J1m" kind="relationship" relationship="viewControllers" id="r7e-u5-jch"/>
+                        <segue destination="KHj-4F-fRF" kind="relationship" relationship="viewControllers" id="r7e-u5-jch"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fwJ-gj-rJQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -47,16 +64,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UZh-qt-cq8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-732" y="634"/>
-        </scene>
-        <!--Third-->
-        <scene sceneID="zBg-vY-Dwf">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Third" id="lWP-h8-J1m" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="sGz-hk-b2w"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5Fl-Pl-6Ad" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="146" y="634"/>
         </scene>
     </scenes>
 </document>
