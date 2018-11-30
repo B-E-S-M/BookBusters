@@ -57,8 +57,6 @@
 
 ## Video Walkthrough 
 
-Here's a walkthrough of implemented user stories:
-
 <img src='https://i.imgur.com/hZWUv6Y.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIFcreated with [LiceCap](http://www.cockos.com/licecap/).
