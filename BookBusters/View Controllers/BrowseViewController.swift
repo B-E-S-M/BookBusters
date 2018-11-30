@@ -9,11 +9,18 @@
 import UIKit
 
 class BrowseViewController: UIViewController {
-
+    
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var bookCollectionView: UICollectionView!
+    
     var books: [Book] = []
+    var unfilteredBooks: [Book] = [] // use when filtering
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.searchBar.delegate = self
+        self.bookCollectionView.dataSource = self
     }
     
     // set up fetch method for use in view controller
@@ -29,6 +36,7 @@ class BrowseViewController: UIViewController {
             if let books = books {
                 // if successful, populate self.books with result
                 self.books = books
+                self.unfilteredBooks = books // use when filtering
             }
             else {
                 // if error, print error in console
@@ -38,6 +46,7 @@ class BrowseViewController: UIViewController {
             // This is still inside of the closure.
             // Calling this outside of the closure will result
             //  in attempting to print from an empty array.
+            self.bookCollectionView.reloadData()
             self.testPrint()
         } // end of closure
     }
@@ -98,9 +107,23 @@ class BrowseViewController: UIViewController {
             print(book.name!)
         }
     }
+    
 }
 
-
+extension BrowseViewController : UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        if self.searchBar.text != "" {
+            // Filter the books
+            let filteredBooks = BookFiltering().filterBooks(books: unfilteredBooks, searchString: self.searchBar.text!)
+            self.books = filteredBooks
+        } else {
+            self.books = self.unfilteredBooks
+        }
+        self.bookCollectionView.reloadData()
+        self.searchBar.resignFirstResponder()
+    }
+    
+}
 
 
 extension BrowseViewController : UICollectionViewDataSource{

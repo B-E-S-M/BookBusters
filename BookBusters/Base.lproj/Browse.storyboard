@@ -84,8 +84,6 @@
                                         </view>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <outlet property="BookImageView" destination="cnt-5J-F7k" id="ccV-KN-0Cc"/>
-                                            <outlet property="SubjectLabel" destination="E4U-FS-6fT" id="CUv-gf-dKb"/>
                                             <outlet property="bookImageView" destination="cnt-5J-F7k" id="ELv-Y8-6vS"/>
                                             <outlet property="conditionLabel" destination="Tav-lh-ubC" id="bAw-IZ-7km"/>
                                             <outlet property="locationLabel" destination="3p0-tO-Aep" id="qyX-UC-Jmd"/>
@@ -101,6 +99,10 @@
                         <viewLayoutGuide key="safeArea" id="fqG-u3-JV6"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="vW0-V7-5qk"/>
+                    <connections>
+                        <outlet property="bookCollectionView" destination="luH-23-sC7" id="0Sq-Ga-Q31"/>
+                        <outlet property="searchBar" destination="4cX-01-tfD" id="A5u-A1-7Vl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cxY-hs-DOF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -22,6 +22,8 @@
 		5D33EC7C21AF122100B596FC /* Browse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D33EC7A21AF122100B596FC /* Browse.storyboard */; };
 		5D33EC7F21AF124100B596FC /* Add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D33EC7D21AF124100B596FC /* Add.storyboard */; };
 		5D33EC8221AF124B00B596FC /* Third.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D33EC8021AF124B00B596FC /* Third.storyboard */; };
+		5DAAC80121B0BD1F007D65DF /* BrowseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAAC80021B0BD1F007D65DF /* BrowseCollectionViewCell.swift */; };
+		5DAAC80321B0BD25007D65DF /* BookFiltering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAAC80221B0BD25007D65DF /* BookFiltering.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		5D33EC7B21AF122100B596FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Browse.storyboard; sourceTree = "<group>"; };
 		5D33EC7E21AF124100B596FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Add.storyboard; sourceTree = "<group>"; };
 		5D33EC8121AF124B00B596FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Third.storyboard; sourceTree = "<group>"; };
+		5DAAC80021B0BD1F007D65DF /* BrowseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseCollectionViewCell.swift; sourceTree = "<group>"; };
+		5DAAC80221B0BD25007D65DF /* BookFiltering.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookFiltering.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,7 @@
 		5D33EC1021A2975800B596FC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5DAAC80021B0BD1F007D65DF /* BrowseCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				5D33EC1621A3796300B596FC /* Book.swift */,
+				5DAAC80221B0BD25007D65DF /* BookFiltering.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -316,7 +322,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D33EC6121AAC72100B596FC /* BookBustersAPI.swift in Sources */,
+				5DAAC80321B0BD25007D65DF /* BookFiltering.swift in Sources */,
 				5D33EC1921A37F7200B596FC /* TestAPI.swift in Sources */,
+				5DAAC80121B0BD1F007D65DF /* BrowseCollectionViewCell.swift in Sources */,
 				5D33EC6C21AE783A00B596FC /* AddViewController.swift in Sources */,
 				5D33EC6B21AE783A00B596FC /* ThirdViewController.swift in Sources */,
 				5D33EC1721A3796300B596FC /* Book.swift in Sources */,
