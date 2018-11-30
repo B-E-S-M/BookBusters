@@ -10,6 +10,30 @@ import UIKit
 
 class AddViewController: UIViewController {
 
+    @IBAction func takePhotoButton(_ sender: Any) {
+        // Connect to the camera api
+    }
+    
+    
+    @IBAction func selectPhotoButton(_ sender: Any) {
+        // Access to the Camera Roll and select a photo
+    }
+    
+    @IBOutlet weak var titleText: UITextField!
+    
+    @IBOutlet weak var conditionControl: UISegmentedControl!
+    @IBOutlet weak var textDescription: UITextView!
+    @IBOutlet weak var locationText: UITextField!
+    @IBOutlet weak var priceText: UITextField!
+    
+    @IBAction func postButton(_ sender: Any) {
+        // Connect to database and add an textbook
+        
+        let textbookConditions = ["New", "Like New", "Used"]
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

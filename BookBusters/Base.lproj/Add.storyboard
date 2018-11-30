@@ -21,10 +21,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tg2-fJ-L6N">
                                 <rect key="frame" x="35" y="73" width="305" height="30"/>
                                 <state key="normal" title="Take a Photo"/>
+                                <connections>
+                                    <action selector="takePhotoButton:" destination="509-tY-5uT" eventType="touchUpInside" id="Tpa-vS-TWz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ply-fT-dsa">
                                 <rect key="frame" x="35" y="122" width="305" height="30"/>
                                 <state key="normal" title="Select a Photo"/>
+                                <connections>
+                                    <action selector="selectPhotoButton:" destination="509-tY-5uT" eventType="touchUpInside" id="5dh-nA-qq4"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odv-XL-MwJ">
                                 <rect key="frame" x="35" y="175" width="43" height="21"/>
@@ -65,6 +71,9 @@
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SB6-k8-GFY">
                                 <rect key="frame" x="144" y="601" width="86" height="30"/>
                                 <state key="normal" title="Post"/>
+                                <connections>
+                                    <action selector="postButton:" destination="509-tY-5uT" eventType="touchUpInside" id="VbV-or-bcE"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ezC-TQ-icF">
                                 <rect key="frame" x="35" y="350" width="305" height="128"/>
@@ -129,6 +138,13 @@
                         <viewLayoutGuide key="safeArea" id="L6a-sH-9Uh"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Add" image="first" id="Xus-U2-Il6"/>
+                    <connections>
+                        <outlet property="conditionControl" destination="hiP-1j-V5X" id="6QN-LX-po0"/>
+                        <outlet property="locationText" destination="Dot-aI-uVH" id="FTj-M8-CpG"/>
+                        <outlet property="priceText" destination="b7C-tW-aMo" id="aMF-Iu-t9m"/>
+                        <outlet property="textDescription" destination="ezC-TQ-icF" id="72f-yG-vMl"/>
+                        <outlet property="titleText" destination="Mfk-KW-1gN" id="hVN-BT-VaL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UY9-eN-CRv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
