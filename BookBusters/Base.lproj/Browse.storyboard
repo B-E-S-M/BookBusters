@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cCt-VY-pyM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cCt-VY-pyM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -90,6 +90,7 @@
                                             <outlet property="nameLabel" destination="fVQ-Gu-O70" id="Rso-bv-znU"/>
                                             <outlet property="priceLabel" destination="YTo-5O-afA" id="tMU-Tq-2VF"/>
                                             <outlet property="subjectLabel" destination="E4U-FS-6fT" id="vUR-Jx-yPD"/>
+                                            <segue destination="P2M-r8-HZ8" kind="show" id="qzC-gB-HfU"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -107,6 +108,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cxY-hs-DOF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1708" y="633.73313343328346"/>
+        </scene>
+        <!--Details-->
+        <scene sceneID="zn8-P0-CpO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Details" id="P2M-r8-HZ8" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I9H-TY-42N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1053" y="665"/>
         </scene>
     </scenes>
 </document>
