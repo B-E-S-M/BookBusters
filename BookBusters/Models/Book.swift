@@ -51,20 +51,36 @@ class Book {
         seller_email = dictionary["seller_email"] as? String ?? "Email not specified"
         
         // Format date string
-        let createdAtOriginalString = dictionary["created_at"] as! String
-        let updatedAtOriginalString = dictionary["updated_at"] as! String
+        let getFormatter = DateFormatter()
         let formatter = DateFormatter()
-        // Configure the input format to parse the date string
-        formatter.dateFormat = "E MMM d HH:mm:ss Z y"
-        // Convert String to Date
-        let creationDate = formatter.date(from: createdAtOriginalString)!
-        let updateDate = formatter.date(from: updatedAtOriginalString)!
+        
+        // Configure the input + output format to parse the date string
+        getFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+        getFormatter.timeZone = TimeZone(abbreviation: "PST")
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        getFormatter.timeZone = TimeZone(abbreviation: "PST")
+        
         // Configure output format
         formatter.dateStyle = .short
-        formatter.timeStyle = .none
-        // Convert Date to String and set
-        created_at = formatter.string(from: creationDate)
-        updated_at = formatter.string(from: updateDate)
+        formatter.timeStyle = .short
+        
+        
+        let createdAtOriginalString = dictionary["created_at"] as? String
+        let updatedAtOriginalString = dictionary["updated_at"] as? String
+        
+        if createdAtOriginalString != nil {
+            let creationDate = getFormatter.date(from: createdAtOriginalString!)
+            created_at = formatter.string(from: creationDate!)
+        } else {
+            created_at = "Creation data not available"
+        }
+        
+        if createdAtOriginalString != nil {
+            let updateDate = getFormatter.date(from: updatedAtOriginalString!)
+            updated_at = formatter.string(from: updateDate!)
+        } else {
+            updated_at = "Update date not available"
+        }
     }
     
     class func books(dictionaries: [[String: Any]]) -> [Book] {
