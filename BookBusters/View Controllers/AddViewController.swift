@@ -8,16 +8,11 @@
 
 import UIKit
 
-class AddViewController: UIViewController, UITextFieldDelegate {
-
-    @IBAction func takePhotoButton(_ sender: Any) {
-        // Connect to the camera api
-    }
+class AddViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+     let picker = UIImagePickerController()
+   
+    @IBOutlet weak var imageView: UIImageView!
     
-    
-    @IBAction func selectPhotoButton(_ sender: Any) {
-        // Access to the Camera Roll and select a photo
-    }
     
     @IBOutlet weak var titleText: UITextField!
     
@@ -25,6 +20,58 @@ class AddViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var textDescription: UITextView!
     @IBOutlet weak var locationText: UITextField!
     @IBOutlet weak var priceText: UITextField!
+    
+   
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        priceText.delegate = self
+        picker.delegate = self
+        // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func PickImage(_ sender: Any) {
+        
+       
+       
+        let actionSheet = UIAlertController(title: "Photo Source", message: "Choose a Source", preferredStyle: .actionSheet)
+        
+        actionSheet.addAction(UIAlertAction(title: "Camera", style: .default, handler: {(action:UIAlertAction) in
+           
+            
+            if UIImagePickerController.isSourceTypeAvailable(.camera) {
+                 self.picker.sourceType = .camera
+                 self.present(self.picker, animated: true, completion: nil)
+            } else
+            {
+                print("Camera not available")
+            }
+           
+        }))
+        
+        actionSheet.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: {(action:UIAlertAction) in
+            self.picker.sourceType = .photoLibrary
+            self.present(self.picker, animated: true, completion: nil)
+        }))
+        
+        
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        
+        self.present(actionSheet, animated: true, completion: nil)
+    }
+    // delegates
+    private func imagePickerController(_ picker: UIImagePickerController,
+                               didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : AnyObject])
+    {
+        var  chosenImage = UIImage()
+        chosenImage = UIImagePickerController.InfoKey.originalImage as!UIImage //2
+        imageView.image = chosenImage
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+         picker.dismiss(animated: true, completion: nil)
+    }
+    
     
     @IBAction func postButton(_ sender: Any) {
         // Connect to database and add an textbook
@@ -61,13 +108,7 @@ class AddViewController: UIViewController, UITextFieldDelegate {
         } // end of
     }
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        priceText.delegate = self
-        // Do any additional setup after loading the view.
-    }
+   
     
     // Input Number Validation for price & maybe phone number
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
