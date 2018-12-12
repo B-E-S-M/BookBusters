@@ -10,6 +10,17 @@ import UIKit
 
 class DetailsViewController: UIViewController {
 
+    @IBOutlet weak var itemImage: UIImageView!
+    @IBOutlet weak var itemName: UILabel!
+    @IBOutlet weak var location: UILabel!
+    @IBOutlet weak var subject: UILabel!
+    @IBOutlet weak var condition: UILabel!
+    @IBOutlet weak var sellerImage: UIImageView!
+    @IBOutlet weak var sellerName: UILabel!
+    @IBOutlet weak var sellerContact: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,6 +30,11 @@ class DetailsViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func backButton(_ sender: Any) {
+    navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
     }
     
 

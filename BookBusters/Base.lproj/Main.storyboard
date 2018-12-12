@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3RV-5K-rc2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X60-rU-ATW">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,10 +14,13 @@
         <scene sceneID="PE2-Ck-slp">
             <objects>
                 <tabBarController id="3RV-5K-rc2" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jRX-SY-Gi0">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="jRX-SY-Gi0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.46573627000000001" green="0.78834420439999997" blue="0.78040182589999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.46573627000000001" green="0.78834420439999997" blue="0.78040182589999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="7QL-ZZ-o9P" kind="relationship" relationship="viewControllers" id="bTR-iY-y7s"/>
@@ -32,7 +36,7 @@
         <scene sceneID="UpD-4w-msU">
             <objects>
                 <viewControllerPlaceholder storyboardName="Browse" id="7QL-ZZ-o9P" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="4MC-ZY-ovC"/>
+                    <tabBarItem key="tabBarItem" title="" image="Home icon" selectedImage="Home icon" id="4MC-ZY-ovC"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qbx-Of-eVA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,21 +46,75 @@
         <scene sceneID="tiq-SO-rHQ">
             <objects>
                 <viewControllerPlaceholder storyboardName="Add" id="t9s-AQ-Uof" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="wYB-id-dUa"/>
+                    <tabBarItem key="tabBarItem" title="" image="Camera icon" id="wYB-id-dUa"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UZh-qt-cq8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-732" y="634"/>
         </scene>
-        <!--Third-->
+        <!--User-->
         <scene sceneID="zBg-vY-Dwf">
             <objects>
-                <viewControllerPlaceholder storyboardName="Third" id="lWP-h8-J1m" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="sGz-hk-b2w"/>
+                <viewControllerPlaceholder storyboardName="User" id="lWP-h8-J1m" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="User icon" id="sGz-hk-b2w"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Fl-Pl-6Ad" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="146" y="634"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="fFM-ad-mG9">
+            <objects>
+                <viewController id="X60-rU-ATW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yYi-aS-Aus">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="diary" translatesAutoresizingMaskIntoConstraints="NO" id="v0W-c4-cHQ">
+                                <rect key="frame" x="87" y="121" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Book Busters" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gmq-A5-7Ue">
+                                <rect key="frame" x="88" y="329" width="198" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Buy &amp; Sell Textbooks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNU-9F-ASN">
+                                <rect key="frame" x="87" y="371" width="199" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjW-FB-CeR">
+                                <rect key="frame" x="88" y="501" width="199" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Start Busting">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3RV-5K-rc2" kind="show" id="XP0-vb-UC6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="TTt-jN-uao"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kro-fx-QjQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1570" y="-221"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Camera icon" width="36" height="36"/>
+        <image name="Home icon" width="30" height="30"/>
+        <image name="User icon" width="30" height="30"/>
+        <image name="diary" width="200" height="200"/>
+    </resources>
 </document>

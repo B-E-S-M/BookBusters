@@ -8,8 +8,17 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class UserViewController: UIViewController {
 
+    @IBOutlet weak var userImage: UIImageView!
+    
+    @IBOutlet weak var userName: UILabel!
+    
+    @IBOutlet weak var userEmail: UILabel!
+    
+    @IBOutlet weak var userPhoneNo: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
