@@ -18,28 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tg2-fJ-L6N">
-                                <rect key="frame" x="35" y="47" width="305" height="30"/>
-                                <color key="backgroundColor" red="0.46573627000000001" green="0.78834420439999997" blue="0.78040182589999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Take a Photo">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="takePhotoButton:" destination="509-tY-5uT" eventType="touchUpInside" id="Tpa-vS-TWz"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ply-fT-dsa">
-                                <rect key="frame" x="35" y="96" width="305" height="30"/>
-                                <color key="backgroundColor" red="0.46573627000000001" green="0.78834420439999997" blue="0.78040182589999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Select a Photo">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="selectPhotoButton:" destination="509-tY-5uT" eventType="touchUpInside" id="5dh-nA-qq4"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SB6-k8-GFY">
-                                <rect key="frame" x="39" y="565" width="301" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SB6-k8-GFY">
+                                <rect key="frame" x="39" y="565" width="301" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="Post">
@@ -114,43 +94,60 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6nZ-aO-4B1">
+                                <rect key="frame" x="39" y="20" width="148" height="113"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="148" id="ks8-rS-N22"/>
+                                    <constraint firstAttribute="height" constant="113" id="sVr-US-qKD"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ply-fT-dsa">
+                                <rect key="frame" x="219" y="61" width="102" height="30"/>
+                                <color key="backgroundColor" red="0.46573627000000001" green="0.78834420439999997" blue="0.78040182589999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Select A Photo">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="PickImage:" destination="509-tY-5uT" eventType="touchUpInside" id="j6D-ms-vUx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="odv-XL-MwJ" firstAttribute="top" secondItem="6nZ-aO-4B1" secondAttribute="bottom" constant="8" id="1pB-6P-61z"/>
                             <constraint firstItem="L6a-sH-9Uh" firstAttribute="trailing" secondItem="Dot-aI-uVH" secondAttribute="trailing" constant="35" id="2PV-YX-fUs"/>
                             <constraint firstItem="Dot-aI-uVH" firstAttribute="leading" secondItem="OXO-dr-Yn5" secondAttribute="trailing" constant="8" id="2gE-yh-YVI"/>
+                            <constraint firstItem="Ply-fT-dsa" firstAttribute="top" secondItem="L6a-sH-9Uh" secondAttribute="top" constant="41" id="3al-Xd-Msc"/>
                             <constraint firstItem="OXO-dr-Yn5" firstAttribute="leading" secondItem="L6a-sH-9Uh" secondAttribute="leading" constant="35" id="459-Uw-Xwk"/>
-                            <constraint firstItem="Ply-fT-dsa" firstAttribute="top" secondItem="tg2-fJ-L6N" secondAttribute="bottom" constant="19" id="7ze-j6-6gk"/>
                             <constraint firstItem="Mfk-KW-1gN" firstAttribute="leading" secondItem="L6a-sH-9Uh" secondAttribute="leading" constant="35" id="8GB-mo-G8f"/>
                             <constraint firstItem="odv-XL-MwJ" firstAttribute="leading" secondItem="L6a-sH-9Uh" secondAttribute="leading" constant="35" id="9Jq-Qo-O7W"/>
                             <constraint firstItem="L6a-sH-9Uh" firstAttribute="trailing" secondItem="Mfk-KW-1gN" secondAttribute="trailing" constant="35" id="9KM-Tp-tId"/>
                             <constraint firstItem="Dot-aI-uVH" firstAttribute="top" secondItem="Tn6-Un-JXA" secondAttribute="bottom" constant="22" id="AHb-RD-y7a"/>
                             <constraint firstItem="SB6-k8-GFY" firstAttribute="leading" secondItem="L6a-sH-9Uh" secondAttribute="leading" constant="39" id="BTk-zY-EmK"/>
-                            <constraint firstItem="Ply-fT-dsa" firstAttribute="leading" secondItem="L6a-sH-9Uh" secondAttribute="leading" constant="35" id="BzB-jA-aUg"/>
                             <constraint firstItem="b7C-tW-aMo" firstAttribute="top" secondItem="Dot-aI-uVH" secondAttribute="bottom" constant="18" id="CDi-Yq-oEB"/>
                             <constraint firstItem="Mfk-KW-1gN" firstAttribute="top" secondItem="odv-XL-MwJ" secondAttribute="bottom" constant="15" id="FXf-WX-C6d"/>
+                            <constraint firstItem="L6a-sH-9Uh" firstAttribute="trailing" secondItem="Ply-fT-dsa" secondAttribute="trailing" constant="54" id="Gkt-kc-jCe"/>
                             <constraint firstItem="L6a-sH-9Uh" firstAttribute="trailing" secondItem="odv-XL-MwJ" secondAttribute="trailing" constant="297" id="J3p-Q9-d0l"/>
                             <constraint firstItem="i1K-ay-RpM" firstAttribute="leading" secondItem="L6a-sH-9Uh" secondAttribute="leading" constant="39" id="MeH-1Q-ggp"/>
                             <constraint firstItem="Dot-aI-uVH" firstAttribute="top" secondItem="Tn6-Un-JXA" secondAttribute="bottom" constant="22" id="NJr-Vq-NNV"/>
                             <constraint firstItem="Tn6-Un-JXA" firstAttribute="leading" secondItem="L6a-sH-9Uh" secondAttribute="leading" constant="35" id="Qac-Om-PJZ"/>
                             <constraint firstItem="hiP-1j-V5X" firstAttribute="top" secondItem="Mfk-KW-1gN" secondAttribute="bottom" constant="23" id="WcU-AM-c3r"/>
-                            <constraint firstItem="tg2-fJ-L6N" firstAttribute="leading" secondItem="L6a-sH-9Uh" secondAttribute="leading" constant="35" id="Ya4-dO-1bJ"/>
+                            <constraint firstItem="6nZ-aO-4B1" firstAttribute="top" secondItem="L6a-sH-9Uh" secondAttribute="top" id="YFn-JV-FhJ"/>
                             <constraint firstItem="b7C-tW-aMo" firstAttribute="leading" secondItem="i1K-ay-RpM" secondAttribute="trailing" constant="8" id="aK7-Gp-pdQ"/>
                             <constraint firstItem="L6a-sH-9Uh" firstAttribute="trailing" secondItem="xfT-xn-yaX" secondAttribute="trailing" constant="243" id="b5K-NW-onw"/>
                             <constraint firstItem="OXO-dr-Yn5" firstAttribute="top" secondItem="Tn6-Un-JXA" secondAttribute="bottom" constant="27" id="bBA-lU-YXa"/>
+                            <constraint firstItem="Ply-fT-dsa" firstAttribute="leading" secondItem="6nZ-aO-4B1" secondAttribute="trailing" constant="32" id="bkN-le-wpw"/>
                             <constraint firstItem="L6a-sH-9Uh" firstAttribute="trailing" secondItem="hiP-1j-V5X" secondAttribute="trailing" constant="35" id="cUM-02-W1k"/>
                             <constraint firstItem="SB6-k8-GFY" firstAttribute="top" secondItem="b7C-tW-aMo" secondAttribute="bottom" constant="23" id="dNa-3S-rZf"/>
-                            <constraint firstItem="L6a-sH-9Uh" firstAttribute="trailing" secondItem="tg2-fJ-L6N" secondAttribute="trailing" constant="35" id="eyx-n6-YQE"/>
+                            <constraint firstItem="6nZ-aO-4B1" firstAttribute="leading" secondItem="L6a-sH-9Uh" secondAttribute="leading" constant="39" id="ePd-1r-fmQ"/>
                             <constraint firstItem="b7C-tW-aMo" firstAttribute="top" secondItem="Dot-aI-uVH" secondAttribute="bottom" constant="18" id="fjq-1Q-oYw"/>
                             <constraint firstItem="xfT-xn-yaX" firstAttribute="leading" secondItem="L6a-sH-9Uh" secondAttribute="leading" constant="35" id="iS0-iH-0HZ"/>
                             <constraint firstItem="L6a-sH-9Uh" firstAttribute="trailing" secondItem="SB6-k8-GFY" secondAttribute="trailing" constant="35" id="kdz-cW-Z5e"/>
-                            <constraint firstItem="L6a-sH-9Uh" firstAttribute="trailing" secondItem="Ply-fT-dsa" secondAttribute="trailing" constant="35" id="mJw-7D-0iV"/>
                             <constraint firstItem="i1K-ay-RpM" firstAttribute="top" secondItem="OXO-dr-Yn5" secondAttribute="bottom" constant="27" id="naZ-CA-5Y1"/>
                             <constraint firstItem="L6a-sH-9Uh" firstAttribute="trailing" secondItem="b7C-tW-aMo" secondAttribute="trailing" constant="35" id="p7J-j1-jrN"/>
-                            <constraint firstItem="tg2-fJ-L6N" firstAttribute="top" secondItem="L6a-sH-9Uh" secondAttribute="top" constant="27" id="qai-XH-DB1"/>
                             <constraint firstItem="Tn6-Un-JXA" firstAttribute="top" secondItem="xfT-xn-yaX" secondAttribute="bottom" constant="8" id="sZr-63-DHS"/>
                             <constraint firstItem="xfT-xn-yaX" firstAttribute="top" secondItem="hiP-1j-V5X" secondAttribute="bottom" constant="18" id="taR-e3-3QD"/>
-                            <constraint firstItem="odv-XL-MwJ" firstAttribute="top" secondItem="Ply-fT-dsa" secondAttribute="bottom" constant="15" id="x2M-V9-8XA"/>
                             <constraint firstItem="L6a-sH-9Uh" firstAttribute="trailing" secondItem="Tn6-Un-JXA" secondAttribute="trailing" constant="35" id="xba-vP-wgb"/>
                             <constraint firstItem="hiP-1j-V5X" firstAttribute="leading" secondItem="L6a-sH-9Uh" secondAttribute="leading" constant="35" id="z2E-ul-fce"/>
                         </constraints>
@@ -159,6 +156,7 @@
                     <tabBarItem key="tabBarItem" title="" image="Camera icon" id="Xus-U2-Il6"/>
                     <connections>
                         <outlet property="conditionControl" destination="hiP-1j-V5X" id="6QN-LX-po0"/>
+                        <outlet property="imageView" destination="6nZ-aO-4B1" id="LGd-ZZ-vYw"/>
                         <outlet property="locationText" destination="Dot-aI-uVH" id="FTj-M8-CpG"/>
                         <outlet property="priceText" destination="b7C-tW-aMo" id="aMF-Iu-t9m"/>
                         <outlet property="textDescription" destination="Tn6-Un-JXA" id="cOS-hf-6iC"/>
