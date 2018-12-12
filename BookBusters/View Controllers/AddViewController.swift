@@ -60,12 +60,11 @@ class AddViewController: UIViewController, UITextFieldDelegate,UIImagePickerCont
         self.present(actionSheet, animated: true, completion: nil)
     }
     // delegates
-    func imagePickerController(_ picker: UIImagePickerController,
-                                       didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : AnyObject])
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any])
     {
         var  chosenImage = UIImage()
         chosenImage = info[UIImagePickerController.InfoKey.originalImage] as! UIImage //2
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
         imageView.image = chosenImage
         picker.dismiss(animated: true, completion: nil)
         
