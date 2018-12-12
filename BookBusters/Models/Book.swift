@@ -50,21 +50,23 @@ class Book {
         seller_phone = dictionary["seller_phone"] as? String ?? "Phone number not specified"
         seller_email = dictionary["seller_email"] as? String ?? "Email not specified"
         
-        // Format date string
-        let createdAtOriginalString = dictionary["created_at"] as! String
-        let updatedAtOriginalString = dictionary["updated_at"] as! String
-        let formatter = DateFormatter()
-        // Configure the input format to parse the date string
-        formatter.dateFormat = "E MMM d HH:mm:ss Z y"
-        // Convert String to Date
-        let creationDate = formatter.date(from: createdAtOriginalString)!
-        let updateDate = formatter.date(from: updatedAtOriginalString)!
-        // Configure output format
-        formatter.dateStyle = .short
-        formatter.timeStyle = .none
-        // Convert Date to String and set
-        created_at = formatter.string(from: creationDate)
-        updated_at = formatter.string(from: updateDate)
+//        // Format date string
+        created_at = dictionary["created_at"] as? String ?? ""
+        updated_at = dictionary["updated_at"] as? String ?? ""
+//        let createdAtOriginalString = dictionary["created_at"] as! String
+//        let updatedAtOriginalString = dictionary["updated_at"] as! String
+//        let formatter = DateFormatter()
+//        // Configure the input format to parse the date string
+//        formatter.dateFormat = "E MMM d HH:mm:ss Z y"
+//        // Convert String to Date
+//        let creationDate = formatter.date(from: createdAtOriginalString)!
+//        let updateDate = formatter.date(from: updatedAtOriginalString)!
+//        // Configure output format
+//        formatter.dateStyle = .short
+//        formatter.timeStyle = .none
+//        // Convert Date to String and set
+//        created_at = formatter.string(from: creationDate)
+//        updated_at = formatter.string(from: updateDate)
     }
     
     class func books(dictionaries: [[String: Any]]) -> [Book] {

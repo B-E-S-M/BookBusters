@@ -76,6 +76,8 @@ class AddViewController: UIViewController, UITextFieldDelegate {
         let typedCharacterSet = CharacterSet(charactersIn: string)
         return allowedCharacterSet.isSuperset(of: typedCharacterSet)
     }
+    
+    
 
     /*
     // MARK: - Navigation

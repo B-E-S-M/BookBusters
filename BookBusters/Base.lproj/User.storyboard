@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KHj-4F-fRF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--User View Controller-->
+        <scene sceneID="ota-zI-I2e">
+            <objects>
+                <viewController id="KHj-4F-fRF" customClass="UserViewController" customModule="BookBusters" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KIr-6N-4Ga">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="User" translatesAutoresizingMaskIntoConstraints="NO" id="fki-sT-8S2">
+                                <rect key="frame" x="99" y="108" width="177" height="177.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2Y-14-u5H">
+                                <rect key="frame" x="127" y="318.5" width="121" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCl-Kl-nyq">
+                                <rect key="frame" x="163" y="356" width="48" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone No." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hC7-dm-Ry6">
+                                <rect key="frame" x="142" y="389" width="91" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="INm-6h-Bhe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cYh-eY-KLp">
+                                <rect key="frame" x="40" y="438" width="295" height="2"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cYh-eY-KLp" firstAttribute="centerX" secondItem="hC7-dm-Ry6" secondAttribute="centerX" id="3JS-q7-1Mz"/>
+                            <constraint firstItem="cCl-Kl-nyq" firstAttribute="top" secondItem="N2Y-14-u5H" secondAttribute="bottom" constant="8" symbolic="YES" id="5hT-8a-ckh"/>
+                            <constraint firstItem="cCl-Kl-nyq" firstAttribute="leading" secondItem="5E3-OB-bFk" secondAttribute="leading" constant="163" id="ByB-I1-wx3"/>
+                            <constraint firstItem="fki-sT-8S2" firstAttribute="centerX" secondItem="N2Y-14-u5H" secondAttribute="centerX" id="HCJ-Yf-NTR"/>
+                            <constraint firstItem="fki-sT-8S2" firstAttribute="top" secondItem="5E3-OB-bFk" secondAttribute="top" constant="88" id="K1q-Z4-Vpm"/>
+                            <constraint firstItem="hC7-dm-Ry6" firstAttribute="top" secondItem="cCl-Kl-nyq" secondAttribute="bottom" constant="9" id="Mi4-ni-qtn"/>
+                            <constraint firstItem="N2Y-14-u5H" firstAttribute="top" secondItem="fki-sT-8S2" secondAttribute="bottom" constant="33" id="P09-Bg-CVV"/>
+                            <constraint firstItem="cYh-eY-KLp" firstAttribute="top" secondItem="KIr-6N-4Ga" secondAttribute="top" constant="438" id="VEq-wO-1Do"/>
+                            <constraint firstItem="cCl-Kl-nyq" firstAttribute="centerX" secondItem="KIr-6N-4Ga" secondAttribute="centerX" id="aup-kJ-3i3"/>
+                            <constraint firstItem="5E3-OB-bFk" firstAttribute="bottom" secondItem="cYh-eY-KLp" secondAttribute="bottom" constant="227" id="dKs-ij-AKY"/>
+                            <constraint firstItem="N2Y-14-u5H" firstAttribute="centerX" secondItem="cCl-Kl-nyq" secondAttribute="centerX" id="gWh-QK-avn"/>
+                            <constraint firstItem="cYh-eY-KLp" firstAttribute="leading" secondItem="KIr-6N-4Ga" secondAttribute="leadingMargin" constant="24" id="oMr-Ee-6f9"/>
+                            <constraint firstItem="cYh-eY-KLp" firstAttribute="top" secondItem="hC7-dm-Ry6" secondAttribute="bottom" constant="25" id="toV-nJ-mXd"/>
+                            <constraint firstItem="hC7-dm-Ry6" firstAttribute="centerX" secondItem="cCl-Kl-nyq" secondAttribute="centerX" id="uY0-ne-wOo"/>
+                            <constraint firstItem="N2Y-14-u5H" firstAttribute="centerY" secondItem="KIr-6N-4Ga" secondAttribute="centerY" id="uzZ-tP-P28"/>
+                            <constraint firstItem="fki-sT-8S2" firstAttribute="leading" secondItem="5E3-OB-bFk" secondAttribute="leading" constant="99" id="x2p-jN-5Yz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5E3-OB-bFk"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" image="User icon" id="Eqe-Zb-NjL"/>
+                    <connections>
+                        <outlet property="userEmail" destination="cCl-Kl-nyq" id="7QS-dK-3bK"/>
+                        <outlet property="userImage" destination="fki-sT-8S2" id="C4W-FO-elK"/>
+                        <outlet property="userName" destination="N2Y-14-u5H" id="rln-2C-erH"/>
+                        <outlet property="userPhoneNo" destination="hC7-dm-Ry6" id="DLo-cw-jEP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tHH-D4-77q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="144.80000000000001" y="633.73313343328346"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="User" width="150" height="138"/>
+        <image name="User icon" width="30" height="30"/>
+    </resources>
+</document>
