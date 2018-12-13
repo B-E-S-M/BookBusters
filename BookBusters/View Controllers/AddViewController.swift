@@ -16,6 +16,11 @@ class AddViewController: UIViewController, UITextFieldDelegate,UIImagePickerCont
     
     @IBOutlet weak var titleText: UITextField!
     
+    @IBOutlet weak var subject: UITextField!
+    
+    @IBOutlet weak var sellerPhone: UITextField!
+    
+    @IBOutlet weak var sellerEmail: UITextField!
     @IBOutlet weak var conditionControl: UISegmentedControl!
     @IBOutlet weak var textDescription: UITextView!
     @IBOutlet weak var locationText: UITextField!
@@ -67,14 +72,7 @@ class AddViewController: UIViewController, UITextFieldDelegate,UIImagePickerCont
         imageView.contentMode = .scaleAspectFill
         imageView.image = chosenImage
         picker.dismiss(animated: true, completion: nil)
-        
-        /*
-         var  chosenImage = UIImage()
-         chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage //2
-         myImageView.contentMode = .scaleAspectFit //3
-         myImageView.image = chosenImage //4
-         dismiss(animated:true, completion: nil) //5
- */
+    
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
@@ -87,15 +85,15 @@ class AddViewController: UIViewController, UITextFieldDelegate,UIImagePickerCont
         let textbookConditions = ["New", "Like New", "Used"]
         let testBookDictionary: [String: Any] = [
             "name" : titleText.text!,
-            "subject" : "English",
+            "subject" : subject.text!,
             "condition": textbookConditions[conditionControl.selectedSegmentIndex],
             "quantity" : 1,
             "price": priceText.text!,
             "description": textDescription.text!,
             "location": locationText.text!,
             "image_link": "https://i.imgur.com/rAoagIA.png",
-            "seller_phone": "916-555-0101",
-            "seller_email": "coolestperson@yourmail.com"
+            "seller_phone": sellerPhone.text!,
+            "seller_email": sellerEmail.text!
         ]
         
         // the argument, book, represents a new Book
