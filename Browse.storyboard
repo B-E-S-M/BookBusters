@@ -140,7 +140,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Menu Icon"/>
                                 <connections>
-                                    <segue destination="Aeg-FH-DxW" kind="show" id="k9y-GG-Ia6"/>
+                                    <segue destination="Aeg-FH-DxW" kind="show" id="qYD-Dn-gpP"/>
                                 </connections>
                             </button>
                         </subviews>
