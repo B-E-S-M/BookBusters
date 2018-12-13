@@ -8,15 +8,18 @@
 
 import UIKit
 
-class AddViewController: UIViewController, UITextFieldDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class AddViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource,UITextFieldDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     let picker = UIImagePickerController()
- 
-    
+    var subjectOptions: [String] = String()
     
     @IBOutlet weak var titleText: UITextField!
     
-    @IBOutlet weak var subject: UITextField!
+//    @IBOutlet weak var subject: UITextField!
+    @IBOutlet weak var subjectLabel: UITextField!
+    
+    @IBOutlet weak var subjectPicker: UIPickerView!
+    
     
     @IBOutlet weak var sellerPhone: UITextField!
     
@@ -34,6 +37,11 @@ class AddViewController: UIViewController, UITextFieldDelegate,UIImagePickerCont
         
         priceText.delegate = self
         picker.delegate = self
+        
+        self.subjectPicker.delegate = self
+        self.subjectPicker.dataSource = self
+        
+        subjectOptions = ["Math","English", "History", "Chemistry", "Computer Science", "IOS", "Japanese", "Physics", "Sociology", "Spanish"]
    
     }
     
@@ -82,10 +90,12 @@ class AddViewController: UIViewController, UITextFieldDelegate,UIImagePickerCont
     @IBAction func postButton(_ sender: Any) {
         // Connect to database and add an textbook
         
+        
         let textbookConditions = ["New", "Like New", "Used"]
         let testBookDictionary: [String: Any] = [
             "name" : titleText.text!,
-            "subject" : subject.text!,
+//            "subject" : subjectOptions[subjectLabel.selectedRow(inComponent: 0)],
+            "subject" : subjectLabel.text,
             "condition": textbookConditions[conditionControl.selectedSegmentIndex],
             "quantity" : 1,
             "price": priceText.text!,
@@ -125,7 +135,25 @@ class AddViewController: UIViewController, UITextFieldDelegate,UIImagePickerCont
         return allowedCharacterSet.isSuperset(of: typedCharacterSet)
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     
+    // Number of columns of data
+    func numberOfComponents(in pickerView: UIPickerView) -&gt; Int {
+    return 1
+    }
+    
+    // The number of rows of data
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -&gt; Int {
+    return pickerData.count
+    }
+    
+    // The data to return fopr the row and component (column) that's being passed in
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -&gt; String? {
+    return pickerData[row]
+    }
 
     /*
     // MARK: - Navigation
