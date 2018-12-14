@@ -22,6 +22,7 @@ class BrowseViewController: UIViewController {
     var books: [Book] = []
     var unfilteredBooks: [Book] = [] // use when filtering
     
+    var tag: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -115,7 +116,31 @@ class BrowseViewController: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "DetailSegue" {
+            let cell = sender as! UICollectionViewCell
+            if let indexPath = self.bookCollectionView.indexPath(for: cell) {
+                let book = self.books[indexPath.row]
+                let vc = segue.destination as! DetailsViewController
+                vc.book = book
+                
+                //            vc.itemName.text = books[indexPath!.row].name
+                //            vc.subject.text = books[indexPath!.row].subject
+                //            vc.location.text = books[indexPath!.row].location
+                //            vc.condition.text = books[indexPath!.row].condition
+                
+//                vc.itemName.text = book.name
+//                vc.subject.text = book.subject
+//                vc.location.text = book.location
+//                vc.condition.text = book.condition
+            }
+        }
+    }
+    
 }
+
+
 extension BrowseViewController : FilterDelegate {
     func getFilterData(subjectFiltering: String, conditionsFiltering: String) {
         subjectsFilter = subjectFiltering
@@ -129,7 +154,8 @@ extension BrowseViewController : UISearchBarDelegate {
         if self.searchBar.text != "" {
             // Filter the books
             let filteredBooks = BookFiltering().filterBooks(books: unfilteredBooks, searchString: self.searchBar.text!)
-            self.books = filteredBooks.filter(( { $0.subject == subjectsFilter } ))
+            //self.books = filteredBooks.filter(( { $0.subject == subjectsFilter } ))
+            self.books = filteredBooks
         } else {
             self.books = self.unfilteredBooks
         }
@@ -158,14 +184,22 @@ extension BrowseViewController : UICollectionViewDataSource{
         cell.subjectLabel?.text = books[indexPath.row].subject
         cell.locationLabel?.text = books[indexPath.row].location
         cell.nameLabel?.text = books[indexPath.row].name
-        if let bookStringURL = books[indexPath.row].image_link{
-            let imageURL = URL(string: bookStringURL)
-            cell.bookImageView.af_setImage(withURL: imageURL!)
-        }
+        cell.tag = indexPath.row
+//        if let bookStringURL = books[indexPath.row].image_link{
+//            let imageURL = URL(string: bookStringURL)
+//            cell.bookImageView.af_setImage(withURL: imageURL!)
+//        }
        
         
        return cell
         
     }
+    
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
+//        let cell = collectionView.cellForItem(at: indexPath) as! BrowseCollectionViewCell
+//        self.tag = cell.tag
+//    }
+    
+    
 }
     

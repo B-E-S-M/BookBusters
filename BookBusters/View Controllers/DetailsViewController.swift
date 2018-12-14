@@ -18,13 +18,31 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var sellerImage: UIImageView!
     @IBOutlet weak var sellerName: UILabel!
     @IBOutlet weak var sellerContact: UILabel!
+    @IBOutlet weak var updateAtLabel: UILabel!
+    @IBOutlet weak var sellerPhoneLabel: UILabel!
+    @IBOutlet weak var sellerEmailLabel: UILabel!
     
     
+    var book: Book?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        if let book = book {
+            if book.image_link != nil {
+                if book.image_link != "" {
+                    itemImage.af_setImage(withURL: URL(string: book.image_link!)!)
+                }
+            }
+            itemName.text = book.name
+            location.text = book.location
+            subject.text = book.subject
+            condition.text = book.condition
+            updateAtLabel.text = book.updated_at
+            sellerPhoneLabel.text = book.seller_phone
+            sellerEmailLabel.text = book.seller_email
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,5 +65,7 @@ class DetailsViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
 
 }

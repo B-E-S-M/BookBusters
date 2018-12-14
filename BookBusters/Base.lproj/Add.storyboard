@@ -107,11 +107,11 @@
                                     <constraint firstAttribute="height" constant="104" id="NY3-uP-2bP"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ply-fT-dsa">
-                                <rect key="frame" x="204" y="53" width="102" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ply-fT-dsa">
+                                <rect key="frame" x="204" y="53" width="129" height="30"/>
                                 <color key="backgroundColor" red="0.46573627000000001" green="0.78834420439999997" blue="0.78040182589999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Select A Photo">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="PickImage:" destination="509-tY-5uT" eventType="touchUpInside" id="j6D-ms-vUx"/>

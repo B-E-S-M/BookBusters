@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4cX-01-tfD">
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="4cX-01-tfD">
                                 <rect key="frame" x="0.0" y="20" width="319" height="56"/>
                                 <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -130,14 +130,13 @@
                                             <outlet property="nameLabel" destination="fVQ-Gu-O70" id="Rso-bv-znU"/>
                                             <outlet property="priceLabel" destination="YTo-5O-afA" id="tMU-Tq-2VF"/>
                                             <outlet property="subjectLabel" destination="E4U-FS-6fT" id="vUR-Jx-yPD"/>
-                                            <segue destination="P2M-r8-HZ8" kind="show" id="qzC-gB-HfU"/>
+                                            <segue destination="P2M-r8-HZ8" kind="show" identifier="DetailSegue" id="qzC-gB-HfU"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ech-EK-T1F">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ech-EK-T1F">
                                 <rect key="frame" x="319" y="20" width="56" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Menu Icon"/>
                                 <connections>
                                     <segue destination="Aeg-FH-DxW" kind="show" id="qYD-Dn-gpP"/>
@@ -150,7 +149,10 @@
                             <constraint firstAttribute="trailing" secondItem="luH-23-sC7" secondAttribute="trailing" id="DeI-ia-kLL"/>
                             <constraint firstItem="luH-23-sC7" firstAttribute="leading" secondItem="gbm-Jn-9w5" secondAttribute="leading" id="FBu-1U-ga9"/>
                             <constraint firstItem="4cX-01-tfD" firstAttribute="top" secondItem="fqG-u3-JV6" secondAttribute="top" id="IXJ-G9-GfY"/>
+                            <constraint firstItem="Ech-EK-T1F" firstAttribute="trailing" secondItem="luH-23-sC7" secondAttribute="trailing" id="IYU-JG-WAU"/>
                             <constraint firstItem="luH-23-sC7" firstAttribute="bottom" secondItem="fqG-u3-JV6" secondAttribute="bottom" id="KrN-90-YQB"/>
+                            <constraint firstItem="Ech-EK-T1F" firstAttribute="top" secondItem="4cX-01-tfD" secondAttribute="top" id="eoY-q7-15s"/>
+                            <constraint firstItem="Ech-EK-T1F" firstAttribute="leading" secondItem="4cX-01-tfD" secondAttribute="trailing" id="psJ-D2-wcq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fqG-u3-JV6"/>
                     </view>
