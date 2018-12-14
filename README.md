@@ -17,11 +17,11 @@
 
 ### Required
 
-- [ ] Users can switch between different screens using navigation
-- [ ] Users can browse through items in a table/collection/other view
-- [ ] Each item has its own details page
-- [ ] Users can post an item and item information
-- [ ] Allow users to search for items using a search bar
+- [x] Users can switch between different screens using navigation
+- [x] Users can browse through items in a table/collection/other view
+- [x] Each item has its own details page
+- [x] Users can post an item and item information
+- [x] Allow users to search for items using a search bar
 - [ ] Allow users to filter results with specific categories
 - [ ] Allow users to sort results using built-in categories
 
