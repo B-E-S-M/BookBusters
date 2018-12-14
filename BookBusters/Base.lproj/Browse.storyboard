@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="4cX-01-tfD">
+                            <searchBar contentMode="redraw" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4cX-01-tfD">
                                 <rect key="frame" x="0.0" y="20" width="319" height="56"/>
                                 <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -135,20 +135,22 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="Menu Icon" translatesAutoresizingMaskIntoConstraints="NO" id="0Et-BU-HpU">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ech-EK-T1F">
                                 <rect key="frame" x="319" y="20" width="56" height="56"/>
-                            </imageView>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Menu Icon"/>
+                                <connections>
+                                    <segue destination="Aeg-FH-DxW" kind="show" id="qYD-Dn-gpP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
                             <constraint firstItem="luH-23-sC7" firstAttribute="leading" secondItem="4cX-01-tfD" secondAttribute="leading" id="8N0-M4-INh"/>
-                            <constraint firstItem="4cX-01-tfD" firstAttribute="trailing" secondItem="0Et-BU-HpU" secondAttribute="leading" id="Cki-eB-5pD"/>
                             <constraint firstAttribute="trailing" secondItem="luH-23-sC7" secondAttribute="trailing" id="DeI-ia-kLL"/>
                             <constraint firstItem="luH-23-sC7" firstAttribute="leading" secondItem="gbm-Jn-9w5" secondAttribute="leading" id="FBu-1U-ga9"/>
                             <constraint firstItem="4cX-01-tfD" firstAttribute="top" secondItem="fqG-u3-JV6" secondAttribute="top" id="IXJ-G9-GfY"/>
                             <constraint firstItem="luH-23-sC7" firstAttribute="bottom" secondItem="fqG-u3-JV6" secondAttribute="bottom" id="KrN-90-YQB"/>
-                            <constraint firstItem="luH-23-sC7" firstAttribute="trailing" secondItem="0Et-BU-HpU" secondAttribute="trailing" id="Wko-H5-YFS"/>
-                            <constraint firstItem="4cX-01-tfD" firstAttribute="top" secondItem="0Et-BU-HpU" secondAttribute="top" id="ufc-N8-UYS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fqG-u3-JV6"/>
                     </view>
@@ -156,6 +158,7 @@
                     <navigationItem key="navigationItem" id="T6T-ze-twJ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="FilterButton" destination="Ech-EK-T1F" id="FTw-82-rE9"/>
                         <outlet property="bookCollectionView" destination="luH-23-sC7" id="0Sq-Ga-Q31"/>
                         <outlet property="searchBar" destination="4cX-01-tfD" id="A5u-A1-7Vl"/>
                     </connections>
@@ -171,6 +174,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I9H-TY-42N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="203.19999999999999" y="521.73913043478262"/>
+        </scene>
+        <!--Filter-->
+        <scene sceneID="m0q-bN-mAQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Filter" id="Aeg-FH-DxW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LuZ-s0-2um" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="195" y="363"/>
         </scene>
     </scenes>
     <resources>

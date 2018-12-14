@@ -10,11 +10,15 @@ import UIKit
 
 class BrowseViewController: UIViewController {
     
+
+    @IBOutlet weak var FilterButton: UIButton!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var bookCollectionView: UICollectionView!
     
+    
     var books: [Book] = []
     var unfilteredBooks: [Book] = [] // use when filtering
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -143,7 +147,7 @@ extension BrowseViewController : UICollectionViewDataSource{
         cell.conditionLabel?.text = books[indexPath.row].condition
         cell.subjectLabel?.text = books[indexPath.row].subject
         cell.locationLabel?.text = books[indexPath.row].location
-        
+        cell.nameLabel?.text = books[indexPath.row].name
        
        return cell
         
