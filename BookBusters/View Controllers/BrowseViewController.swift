@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class BrowseViewController: UIViewController {
     
@@ -148,7 +149,12 @@ extension BrowseViewController : UICollectionViewDataSource{
         cell.subjectLabel?.text = books[indexPath.row].subject
         cell.locationLabel?.text = books[indexPath.row].location
         cell.nameLabel?.text = books[indexPath.row].name
+        if let bookStringURL = books[indexPath.row].image_link{
+            let imageURL = URL(string: bookStringURL)
+            cell.bookImageView.af_setImage(withURL: imageURL!)
+        }
        
+        
        return cell
         
     }
