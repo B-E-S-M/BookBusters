@@ -1,0 +1,6 @@
+framework module Pods_BookBusters {
+  umbrella header "Pods-BookBusters-umbrella.h"
+
+  export *
+  module * { export * }
+}
