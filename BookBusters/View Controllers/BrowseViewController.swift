@@ -16,6 +16,8 @@ class BrowseViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var bookCollectionView: UICollectionView!
     
+    var subjectsFilter = ""
+    var conditionsFilter = ""
     
     var books: [Book] = []
     var unfilteredBooks: [Book] = [] // use when filtering
@@ -114,13 +116,20 @@ class BrowseViewController: UIViewController {
     }
     
 }
+extension BrowseViewController : FilterDelegate {
+    func getFilterData(subjectFiltering: String, conditionsFiltering: String) {
+        subjectsFilter = subjectFiltering
+        conditionsFilter = conditionsFiltering
+    }
+    
+}
 
 extension BrowseViewController : UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         if self.searchBar.text != "" {
             // Filter the books
             let filteredBooks = BookFiltering().filterBooks(books: unfilteredBooks, searchString: self.searchBar.text!)
-            self.books = filteredBooks
+            self.books = filteredBooks.filter(( { $0.subject == subjectsFilter } ))
         } else {
             self.books = self.unfilteredBooks
         }

@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol FilterDelegate {
+    func getFilterData(subjectFiltering: String, conditionsFiltering: String)
+}
+
 class FilterViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
 
     
