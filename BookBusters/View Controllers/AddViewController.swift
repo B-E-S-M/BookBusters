@@ -82,6 +82,10 @@ class AddViewController: UIViewController, UITextFieldDelegate,UIImagePickerCont
     @IBAction func postButton(_ sender: Any) {
         // Connect to database and add an textbook
         
+        // create base64 representation of image
+        let imageData = imageView.image?.jpegData(compressionQuality: 0)
+        let image64 = "data:image/jpg;base64," + (imageData?.base64EncodedString())!
+        
         let textbookConditions = ["New", "Like New", "Used"]
         let testBookDictionary: [String: Any] = [
             "name" : titleText.text!,
@@ -91,7 +95,7 @@ class AddViewController: UIViewController, UITextFieldDelegate,UIImagePickerCont
             "price": priceText.text!,
             "description": textDescription.text!,
             "location": locationText.text!,
-            "image_link": "https://i.imgur.com/rAoagIA.png",
+            "image_data": image64,
             "seller_phone": sellerPhone.text!,
             "seller_email": sellerEmail.text!
         ]
